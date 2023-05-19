@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BottomSheetForSelectProfileColorFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_profile_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_light_black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <View
+        android:id="@+id/v_gray"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/profile_color_radius_rectangle"
+        android:backgroundTint="@color/profile_gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/v_green"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/profile_color_radius_rectangle"
+        android:backgroundTint="@color/profile_green"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/v_pink"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/profile_color_radius_rectangle"
+        android:backgroundTint="@color/profile_pink"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/v_red"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/profile_color_radius_rectangle"
+        android:backgroundTint="@color/profile_red"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/v_tulip"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/profile_color_radius_rectangle"
+        android:backgroundTint="@color/profile_tulip"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:id="@+id/v_yellow"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:background="@drawable/profile_color_radius_rectangle"
+        android:backgroundTint="@color/profile_yellow"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/add"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/profile_gray"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

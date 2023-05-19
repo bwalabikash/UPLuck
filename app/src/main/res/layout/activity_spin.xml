@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SpinActivity">
+
+        <TextView
+            android:id="@+id/tvGName"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:text="Group Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textColor="@color/color_light_black"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/v"
+            android:layout_width="330dp"
+            android:layout_height="450dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGName"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/outline_bg_white">
+
+            <TextView
+                android:id="@+id/tvMember"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:text="Member 1"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/blue_bg"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:text="Selection in Progress"
+                android:textSize="16sp"
+                android:textColor="@color/color_light_black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="90dp"/>
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/cpb"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                app:cpb_background_progressbar_width="3dp"
+                app:cpb_background_progressbar_color="@color/color_light_white"
+                app:cpb_progressbar_color="@color/color_blue"
+                app:cpb_progress="60"
+                app:cpb_progress_max="100"/>
+
+            <TextView
+                android:id="@+id/tvProgressPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_blue"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/btnHome"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="Home"
+                android:textSize="18sp"
+                android:textColor="@color/color_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/blue_outline_bg_white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/btnShare"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="Share"
+                android:textSize="18sp"
+                android:textColor="@color/color_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/blue_outline_bg_white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

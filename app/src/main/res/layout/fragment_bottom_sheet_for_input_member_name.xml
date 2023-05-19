@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BottomSheetForInputMemberNameFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Member Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_light_black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/color_purple"
+        android:hint="Name"
+        app:hintTextColor="@color/color_light_black"
+        app:startIconDrawable="@drawable/ic_person_icon"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNameOfMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoHandwritingEnabled="true"
+            android:textSize="18sp"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Add"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="@color/color_blue"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="90dp"/>
+
+
+</LinearLayout>
